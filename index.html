@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Pets Gallery</title>
+    <link rel="stylesheet" type="text/css" href="bxslider/bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Raleway" rel="stylesheet">
+    <!-- Loads jQuery library via CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- Calls bxSlider Javascript file -->
+    <script src="bxslider/bxslider.min.js"></script>
+    <!-- Calls bxSlider Function -->
+    <script src="bxslider/slider.js"></script>
+  </head>
+<body>
+  <div class="header">
+    <div class="top">
+      <ul class="bxslider">
+        <li><img src="pix/cat12.jpg" title="Junior." alt="cat" /></li>
+        <li><img src="pix/dog2.jpg" title="Levi." alt="dog" /></li>
+        <li><img src="pix/cat14.jpg" title="Melli." alt="cat" /> </li>
+        <li><img src="pix/cat15.jpg" title="Hollister." alt="cat" /></li>
+      </ul>
+    </div>
+    <div class="para">
+      <h1>My Pets</h1>
+      <p>My cats and my dog.</p>
+    </div>
+    <div class="clearfloat">&nbsp;</div>
+  </div>
+  <section class="lower">
+    <hr class="spacer" />
+    <div class="panel">
+      <img src="pix/cat1.jpg" alt="cat" onclick="onClick(this)"/>
+    </div>
+    <div class="panel">
+      <img src="pix/cat2.jpg" alt="cat" onclick="onClick(this)"/>
+      <figcaption><strong>Midnight.</strong> Midnight sitting in one of the kitchen chairs.</figcaption>
+    </div>
+    <div class="panel">
+      <img src="pix/cat3.jpg" alt="cat" onclick="onClick(this)"/>
+    </div>
+    <div class="panel">
+      <img src="pix/cat4.jpg" alt="cat" onclick="onClick(this)"/>
+    </div>
+    <div class="panel">
+      <img src="pix/cat5.jpg" alt="cat" onclick="onClick(this)"/>
+    </div>
+    <div class="panel">
+      <img src="pix/cat6.jpg" alt="cat" onclick="onClick(this)"/>
+    </div>
+    <div class="panel">
+      <img src="pix/cat7.jpg" alt="cat" onclick="onClick(this)"/>
+    </div>
+    <div class="panel">
+      <img src="pix/cat8.jpg" alt="cat" onclick="onClick(this)"/>
+    </div>
+    <div class="panel">
+      <img src="pix/cat9.jpg" alt="cat" onclick="onClick(this)"/>
+    </div>
+    <div class="panel">
+      <img src="pix/cat10.jpg" alt="cat" onclick="onClick(this)"/>
+    </div>
+    <div class="panel">
+      <img src="pix/cat11.jpg" alt="cat" onclick="onClick(this)"/>
+    </div>
+    <div class="panel">
+      <img src="pix/dog1.jpg" alt="dog" onclick="onClick(this)"/>
+    </div>
+  </section>
+  <div id="modal01" class="modal" onclick="this.style.display='none'">
+    <span class="closebtn container">&times;</span>
+    <div class="modal-content animate-zoom">
+      <img id="img01" style="width:100%">
+    </div>
+  </div>
+  <footer>
+      <p>&copy; Rebecca Burns 2016</p>
+  </footer>
+  <script>
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+    }
+  </script>
+</body>
+</html>

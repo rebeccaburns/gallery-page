@@ -1,0 +1,9 @@
+body {/*-- adds space around the slider --*/
+	width: 80%;
+	margin: 50px auto;
+}
+/*-- bxslider corrections --*/
+ul.bxslider {
+	left: -40px;
+	top: -15px;
+}
